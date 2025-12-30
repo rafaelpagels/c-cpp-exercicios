@@ -14,7 +14,7 @@
 
 int opcao_usuario, nmr_maq, empate, vitoria, derrota, partida;
 
-main () {
+int main() {
 	setlocale(LC_ALL, "PORTUGUESE");
 	
 	printf("Bem-vindo ao jogo 'Pedra, Papel e Tesoura'.\n");
@@ -112,6 +112,8 @@ main () {
 	printf("Número de vitórias: %i\n", vitoria);
 	printf("Número de derrotas: %i\n", derrota);
 	printf("Número de empates: %i\n", empate);
+	return 0;
 }
+
 
 
