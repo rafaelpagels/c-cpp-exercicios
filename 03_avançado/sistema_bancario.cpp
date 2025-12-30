@@ -29,7 +29,7 @@ int main() {
     do {
         system("cls");
         printf("MENU Banco Pagels\n\n");
-        printf("Selecione alguma das opcoes abaixo:\n");
+        printf("Selecione alguma das opções abaixo:\n");
         printf("1 - Depositar\n");
         printf("2 - Sacar\n");
         printf("3 - Ver saldo\n");
@@ -40,7 +40,7 @@ int main() {
 
             case 1:
                 if (vezes_deposito == 4) {
-                    printf("\nVoce realizou diversas acoes em sua conta\ne sera desligado por motivos de seguranca.\n");
+                    printf("\nVocê realizou diversas ações em sua conta\ne será desligado por motivos de segurança.\n");
                     system("pause");
                     break;
                 }
@@ -52,7 +52,7 @@ int main() {
                     scanf("%f", &valor_deposito);
 
                     while (valor_deposito == 0) {
-                        printf("Por favor, insira um valor que nao seja zero.\n");
+                        printf("Por favor, insira um valor que não seja zero.\n");
                         scanf("%f", &valor_deposito);
                     }
 
@@ -84,7 +84,7 @@ int main() {
 
             case 2:
                 if (vezes_saque > 2) {
-                    printf("\nSeu saque foi bloqueado por motivos de seguranca.\n");
+                    printf("\nSeu saque foi bloqueado por motivos de segurança.\n");
                     system("pause");
                     break;
                 }
@@ -110,7 +110,7 @@ int main() {
                     scanf("%d", &tentativa);
 
                     if (tentativa != senha) {
-                        printf("\nSenha invalida. Tente novamente.\n");
+                        printf("\nSenha inválida. Tente novamente.\n");
                         system("pause");
                         break;
                     }
@@ -127,16 +127,16 @@ int main() {
                 break;
 
             case 3:
-                printf("O saldo atual e de: %.2f\n", conta.saldoConta);
+                printf("O saldo atual é de: %.2f\n", conta.saldoConta);
                 system("pause");
                 break;
 
             case 4:
-                printf("Encerrando o sistema...\n");
+                printf("Encerrando...\n");
                 break;
 
             default:
-                printf("\nOpcao invalida. Digite um numero entre 1 e 4.\n");
+                printf("\nOpção invalida. Digite um número entre 1 e 4.\n");
                 system("pause");
                 break;
         }
@@ -145,5 +145,3 @@ int main() {
 
     return 0;
 }
-
-
