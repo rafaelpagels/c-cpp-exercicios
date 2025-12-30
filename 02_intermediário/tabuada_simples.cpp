@@ -1,3 +1,9 @@
+/*
+ * Programa em C/C++
+ * Exibe a tabuada de 1 a 10
+ * Conteúdo: For aninhado
+ */
+
 #include <stdio.h>
 #include <locale.h>
 
@@ -14,3 +20,4 @@ int main (){
 		}
 	return 0;			
 }
+
