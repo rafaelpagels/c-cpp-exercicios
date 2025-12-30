@@ -1,3 +1,10 @@
+/*
+* Programa em C/C++
+* O clÃ¡ssico jogo de pedra, papel e tesoura
+* ConteÃºdo: nÃºmero randÃ´mico (srand), switch-if, estatisticas da partida
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -11,7 +18,7 @@ main () {
 	setlocale(LC_ALL, "PORTUGUESE");
 	
 	printf("Bem-vindo ao jogo 'Pedra, Papel e Tesoura'.\n");
-	printf("Escolha algum número e vamos jogar!\n");
+	printf("Escolha algum nÃºmero e vamos jogar!\n");
 
 	do {
 		srand(time(NULL));
@@ -25,85 +32,86 @@ main () {
 		switch(opcao_usuario) {
 
 			case 1:
-				printf("Você escolheu 'Pedra'.\n");
+				printf("VocÃª escolheu 'Pedra'.\n");
 
 				if (nmr_maq == opcao_usuario) {
 					partida++;
 					empate++;
-					printf("Eu também escolhi 'Pedra'. Deu empate!\n");
+					printf("Eu tambÃ©m escolhi 'Pedra'. Deu empate!\n");
 				} else {
 					if (nmr_maq == 2) {
 						partida++;
 						derrota++;
-						printf("Eu escolhi a opção %i, 'Papel'. Você perdeu!\n", nmr_maq);
+						printf("Eu escolhi a opÃ§Ã£o %i, 'Papel'. VocÃª perdeu!\n", nmr_maq);
 					} else {
 						if (nmr_maq == 3) {
 							partida++;
 							vitoria++;
-							printf("Eu escolhi a opção %i, 'Tesoura'. Você ganhou!\n", nmr_maq);
+							printf("Eu escolhi a opÃ§Ã£o %i, 'Tesoura'. VocÃª ganhou!\n", nmr_maq);
 						}
 					}
 				}
 				break;
 
 			case 2:
-				printf("Você escolheu 'Papel'.\n");
+				printf("VocÃª escolheu 'Papel'.\n");
 
 				if (nmr_maq == 1) {
 					partida++;
 					vitoria++;
-					printf("Eu escolhi a opção %i, 'Pedra'. Você ganhou!\n", nmr_maq);
+					printf("Eu escolhi a opÃ§Ã£o %i, 'Pedra'. VocÃª ganhou!\n", nmr_maq);
 				} else {
 					if (nmr_maq == opcao_usuario) {
 						partida++;
 						empate++;
-						printf("Eu também escolhi 'Papel'. Deu empate!\n");
+						printf("Eu tambÃ©m escolhi 'Papel'. Deu empate!\n");
 					} else {
 						if (nmr_maq == 3) {
 							partida++;
 							derrota++;
-							printf("Eu escolhi a opção %i, 'Tesoura'. Você perdeu!\n", nmr_maq);
+							printf("Eu escolhi a opÃ§Ã£o %i, 'Tesoura'. VocÃª perdeu!\n", nmr_maq);
 						}
 					}
 				}
 				break;
 
 			case 3:
-				printf("Você escolheu 'Tesoura'.\n");
+				printf("VocÃª escolheu 'Tesoura'.\n");
 
 				if (nmr_maq == 1) {
 					partida++;
 					derrota++;
-					printf("Eu escolhi a opção %i, 'Pedra'. Você perdeu!\n", nmr_maq);
+					printf("Eu escolhi a opÃ§Ã£o %i, 'Pedra'. VocÃª perdeu!\n", nmr_maq);
 				} else {
 					if (nmr_maq == 2) {
 						partida++;
 						vitoria++;
-						printf("Eu escolhi a opção %i, 'Papel'. Você ganhou!\n", nmr_maq);
+						printf("Eu escolhi a opÃ§Ã£o %i, 'Papel'. VocÃª ganhou!\n", nmr_maq);
 					} else {
 						if (nmr_maq == opcao_usuario) {
 							partida++;
 							empate++;
-							printf("Eu também escolhi 'Tesoura'. Deu empate!\n");
+							printf("Eu tambÃ©m escolhi 'Tesoura'. Deu empate!\n");
 						}
 					}
 				}
 				break;
 
 			default:
-				printf("Escolha uma opção válida!\n");
+				printf("Escolha uma opÃ§Ã£o vÃ¡lida!\n");
 				break;
 		}
 
 		printf("\nDeseja jogar outra partida?\n");
-		printf("Sim - S | Não - N: \n");
+		printf("Sim - S | NÃ£o - N: \n");
 
 	} while (toupper(getche()) == 'S');
 
-	printf("\n\n\n\n|     ESTATÍSTICAS     |\n\n");
-	printf ("Número total de partidas: %i\n", partida);
-	printf("Número de vitórias: %i\n", vitoria);
-	printf("Número de derrotas: %i\n", derrota);
-	printf("Número de empates: %i\n", empate);
+	printf("\n\n\n\n|     ESTATÃSTICAS     |\n\n");
+	printf ("NÃºmero total de partidas: %i\n", partida);
+	printf("NÃºmero de vitÃ³rias: %i\n", vitoria);
+	printf("NÃºmero de derrotas: %i\n", derrota);
+	printf("NÃºmero de empates: %i\n", empate);
 }
+
 
