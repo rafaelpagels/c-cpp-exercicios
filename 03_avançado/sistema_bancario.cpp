@@ -1,7 +1,7 @@
 /*
  * Programa em C/C++
  * Programa feito semelhante à um sistema bancário
- * Conteúdos: struct, switch-if, laços de repetição
+ * Conteúdos: struct, switch-case, laços de repetição
 */ 
 
 
@@ -145,3 +145,4 @@ int main() {
 
     return 0;
 }
+
