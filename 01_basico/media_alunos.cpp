@@ -1,7 +1,7 @@
 /* 
-* Programa b·sico em C
-* Calcula a mÈdia do aluno
-* Conte˙do: entrada/saÌda, vari·veis, if/else
+* Programa b√°sico em C
+* Calcula a m√©dia do aluno
+* Conte√∫do: entrada/sa√≠da, vari√°veis, if/else
 */
 
 #include <stdio.h>
@@ -17,12 +17,12 @@ int main (){
 	printf ("\nEntre com a segunda nota: ");
 	scanf ("%f", &nota2);
 	media = (nota1 + nota2) / 2;
-	printf ("\nA mÈdia final È de: %.2f", media);
+	printf ("\nA m√©dia final √© de: %.2f", media);
 	
 	if (media <= 5.9)
-		printf ("\nVocÍ foi reprovado.");
+		printf ("\nVoc√™ foi reprovado.");
 	else
-		printf ("\nVocÍ foi aprovado!");
+		printf ("\nVoc√™ foi aprovado!");
 		
 	return 0;	
 }
