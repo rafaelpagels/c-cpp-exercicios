@@ -1,7 +1,7 @@
 /*
- * Programa básico em C
+ * Programa bÃ¡sico em C
  * Verifica a obrigatoriedade do voto com base na idade
- * Conteúdos: if/else, operadores lógicos, entrada de dados
+ * ConteÃºdos: if/else, operadores lÃ³gicos, entrada de dados
  */
 
 #include <stdio.h>
@@ -16,16 +16,16 @@ int main() {
     scanf("%d", &idade);
 
     	if (idade <= 15) {
-        	printf("\nNão vota.");
+        	printf("\nNÃ£o vota.");
     	} 
     	else if (idade == 16 || idade == 17 || idade > 70) {
         	printf("\nVoto facultativo.");
     	} 
     	else {
-        	printf("\nVoto obrigatório!");
+        	printf("\nVoto obrigatÃ³rio!");
     	}
 
-    printf("\n\nO voto é um direito do cidadão! Escolha bem nas eleições.");
+    printf("\n\nO voto Ã© um direito do cidadÃ£o! Escolha bem nas eleiÃ§Ãµes.");
 
     return 0;
 }
